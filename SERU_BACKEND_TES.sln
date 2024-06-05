@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SERU_BACKEND_TES", "SERU_BACKEND_TES\SERU_BACKEND_TES.csproj", "{CF49E4EE-3A82-4182-A51D-03923B93D21D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF49E4EE-3A82-4182-A51D-03923B93D21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF49E4EE-3A82-4182-A51D-03923B93D21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF49E4EE-3A82-4182-A51D-03923B93D21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF49E4EE-3A82-4182-A51D-03923B93D21D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C39B69A4-7520-4F2E-B781-FF08B2E66A0D}
+	EndGlobalSection
+EndGlobal
