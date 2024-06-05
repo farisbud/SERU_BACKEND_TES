@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "372126d1-5637-4acc-9222-55b9ff7eab4b",
+		"name": "SERU BACKEND TES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20909344"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7251/api/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7251/api/refresh",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVehicleType",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIyIiwidW5pcXVlX25hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxNzU5ODQ0MSwiZXhwIjoxNzE3NjA1NjQxLCJpYXQiOjE3MTc1OTg0NDF9.8Xg1guq8GAueiphFxn_was-P9C1qC2060t_FA5kVij8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"tes type\",\r\n    \"brandId\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7251/api/vehicle/CreateVehicleType",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"vehicle",
+						"CreateVehicleType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVehicleType Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIyIiwidW5pcXVlX25hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxNzU5ODQ0MSwiZXhwIjoxNzE3NjA1NjQxLCJpYXQiOjE3MTc1OTg0NDF9.8Xg1guq8GAueiphFxn_was-P9C1qC2060t_FA5kVij8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" :9,\r\n    \"name\" : \"tes type\",\r\n    \"brandId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7251/api/vehicle/UpdateVehicleType",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"vehicle",
+						"UpdateVehicleType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7251/api/logout",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVehicleBrand",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIxIiwidW5pcXVlX25hbWUiOiJVc2VyIiwicm9sZSI6InVzZXIiLCJuYmYiOjE3MTc1ODgxNDYsImV4cCI6MTcxNzU5NTM0NiwiaWF0IjoxNzE3NTg4MTQ2fQ.W5XZMz43wBEF49yil2nwHAMKK788EPAhVFX742fOl6c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\" : 0,\r\n    \"limit\": 10,\r\n    \"search\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7251/api/vehicle/getVehicleBrand",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"vehicle",
+						"getVehicleBrand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVehicleTypeByBrand",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIyIiwidW5pcXVlX25hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxNzU5ODQ0MSwiZXhwIjoxNzE3NjA1NjQxLCJpYXQiOjE3MTc1OTg0NDF9.8Xg1guq8GAueiphFxn_was-P9C1qC2060t_FA5kVij8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7251/api/vehicle/getVehicleTypeByBrand?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7251",
+					"path": [
+						"api",
+						"vehicle",
+						"getVehicleTypeByBrand"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
