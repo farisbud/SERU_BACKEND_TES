@@ -118,7 +118,7 @@ namespace SERU_BACKEND_TES.Services
             //cek sound
             var db = _dapperDB.CreateConnection();
 
-            //string sql
+            //string sql verify user
             string sql = @"Select id, name, password, is_admin from users where id = @userId";
 
             var result = await db.QueryAsync<Users>(sql, new
