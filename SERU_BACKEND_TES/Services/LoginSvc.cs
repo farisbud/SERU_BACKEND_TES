@@ -115,6 +115,7 @@ namespace SERU_BACKEND_TES.Services
 
         public async Task<Users> VerifyUserAsync(int id)
         {
+            //cek
             var db = _dapperDB.CreateConnection();
 
             string sql = @"Select id, name, password, is_admin from users where id = @userId";
